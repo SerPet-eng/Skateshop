@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  position: relative;
+  font-size: 1.5rem;
+  .logo {
+    width: 30%;
+    margin-right: auto;
+  }
+  .menu_button {
+    border: none;
+    padding: 2rem;
+    background-color: white;
+    .menu_icon {
+      width: 70%;
+      margin-left: auto;
+    }
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    background-color: red;
+    width: 80dvw;
+    height: 100dvh;
+    padding: 1rem;
+    .nav_menu {
+      padding: 0;
+      .nav_list {
+        list-style: none;
+      }
+    }
+    .nav_buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}

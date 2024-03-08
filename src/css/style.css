@@ -65,4 +65,50 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  font-size: 1.5rem;
+}
+.header .logo {
+  width: 30%;
+  margin-right: auto;
+}
+.header .menu_button {
+  border: none;
+  padding: 2rem;
+  background-color: white;
+}
+.header .menu_button .menu_icon {
+  width: 70%;
+  margin-left: auto;
+}
+.header .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  background-color: red;
+  width: 80dvw;
+  height: 100dvh;
+  padding: 1rem;
+}
+.header .nav .nav_menu {
+  padding: 0;
+}
+.header .nav .nav_menu .nav_list {
+  list-style: none;
+}
+.header .nav .nav_buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=style.css.map */
