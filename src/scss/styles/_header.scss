@@ -1,7 +1,10 @@
+@use '../variables/variables.scss' as *;
+
 .header {
   display: flex;
   position: relative;
   font-size: 1.5rem;
+  background-color: $clr_Primary-900;
   .logo {
     width: 30%;
     margin-right: auto;
@@ -9,7 +12,7 @@
   .menu_button {
     border: none;
     padding: 2rem;
-    background-color: white;
+    background-color: transparent;
     .menu_icon {
       width: 70%;
       margin-left: auto;
@@ -22,20 +25,30 @@
     position: absolute;
     top: 7rem;
     right: 0;
-    background-color: red;
+    background-color: $clr_Secondary-900;
     width: 80dvw;
     height: 100dvh;
     padding: 1rem;
+    font-weight: 500;
     .nav_menu {
       padding: 0;
       .nav_list {
         list-style: none;
+        color: $clr_neutral-900;
       }
     }
     .nav_buttons {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      .nav_login,
+      .nav_register {
+        color: $clr_neutral-900;
+        background-color: $clr_Primary-900;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem;
+      }
     }
   }
 }

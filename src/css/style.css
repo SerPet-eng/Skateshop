@@ -71,6 +71,7 @@ h6 {
   display: flex;
   position: relative;
   font-size: 1.5rem;
+  background-color: hsl(174, 100%, 29%);
 }
 .header .logo {
   width: 30%;
@@ -79,7 +80,7 @@ h6 {
 .header .menu_button {
   border: none;
   padding: 2rem;
-  background-color: white;
+  background-color: transparent;
 }
 .header .menu_button .menu_icon {
   width: 70%;
@@ -92,21 +93,31 @@ h6 {
   position: absolute;
   top: 7rem;
   right: 0;
-  background-color: red;
+  background-color: hsl(22, 62%, 52%);
   width: 80dvw;
   height: 100dvh;
   padding: 1rem;
+  font-weight: 500;
 }
 .header .nav .nav_menu {
   padding: 0;
 }
 .header .nav .nav_menu .nav_list {
   list-style: none;
+  color: hsl(0, 0%, 100%);
 }
 .header .nav .nav_buttons {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.header .nav .nav_buttons .nav_login,
+.header .nav .nav_buttons .nav_register {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(174, 100%, 29%);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
 
 body {
