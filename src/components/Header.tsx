@@ -1,7 +1,14 @@
 import Logo from '../../images/main_AxisRacoon-removebg.png';
 import Menu from '../../images/icon_Menu.svg';
+import { useState } from 'react';
 
 export default function Header() {
+  const [isToggle, setIsToggle] = useState(true);
+
+  const toggleMenuButton = () => {
+    setIsToggle((prevToggle) => !prevToggle);
+  };
+
   return (
     <>
       <header className="header">
@@ -10,10 +17,10 @@ export default function Header() {
           alt="Logo of Axis Skateshop 'The Raccoon'"
           className="logo"
         />
-        <button className="menu_button">
+        <button className="menu_button" onClick={toggleMenuButton}>
           <img src={Menu} alt="Menu Button" className="menu_icon" />
         </button>
-        <nav className="nav">
+        <nav className={`nav ${isToggle ? 'open' : 'close'}`}>
           <ul className="nav_menu">
             <li className="nav_list">Home</li>
             <li className="nav_list">Product</li>

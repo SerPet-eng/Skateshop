@@ -23,8 +23,7 @@
     flex-direction: column;
     gap: 0.5rem;
     position: absolute;
-    top: 7rem;
-    right: 0;
+
     background-color: $clr_Secondary-900;
     width: 80dvw;
     height: 100dvh;
@@ -50,5 +49,13 @@
         padding: 0.5rem;
       }
     }
+  }
+  .open {
+    top: 7rem;
+    right: 0;
+  }
+  .close {
+    top: 7rem;
+    right: -100rem;
   }
 }

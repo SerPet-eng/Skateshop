@@ -91,8 +91,6 @@ h6 {
   flex-direction: column;
   gap: 0.5rem;
   position: absolute;
-  top: 7rem;
-  right: 0;
   background-color: hsl(22, 62%, 52%);
   width: 80dvw;
   height: 100dvh;
@@ -119,7 +117,17 @@ h6 {
   border-radius: 1rem;
   padding: 0.5rem;
 }
+.header .open {
+  top: 7rem;
+  right: 0;
+}
+.header .close {
+  top: 7rem;
+  right: -100rem;
+}
 
+html,
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
