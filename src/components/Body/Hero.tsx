@@ -1,7 +1,13 @@
 export default function Hero() {
   return (
     <>
-      <h1>Hero Test</h1>
+      <section className="hero">
+        <h1 className="hero_title">Welcome to Axis Skateshop</h1>
+        <p className="hero_paragraph">
+          Providing you the best experience to have in skateboarding. Let's
+          Roll!
+        </p>
+      </section>
     </>
   );
 }

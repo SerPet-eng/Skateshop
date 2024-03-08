@@ -91,6 +91,7 @@ h6 {
   flex-direction: column;
   gap: 0.5rem;
   position: absolute;
+  z-index: 1;
   background-color: hsl(22, 62%, 52%);
   width: 80dvw;
   height: 100dvh;
@@ -124,6 +125,38 @@ h6 {
 .header .close {
   top: 7rem;
   right: -100rem;
+}
+
+.hero {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../../../images/image_AxisStore-Outside.jpg");
+  background-size: cover;
+  filter: blur(0.1rem);
+}
+.hero .hero_title {
+  line-height: 3rem;
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+.hero .hero_paragraph {
+  color: hsl(0, 0%, 100%);
 }
 
 html,

@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 0.5rem;
     position: absolute;
-
+    z-index: 1;
     background-color: $clr_Secondary-900;
     width: 80dvw;
     height: 100dvh;
