@@ -172,9 +172,29 @@ h6 {
 
 .hero_image {
   position: absolute;
-  left: 5rem;
-  bottom: 2rem;
+  top: 25rem;
+  left: 6rem;
   z-index: 2;
+  width: 50%;
+}
+
+.features {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features .features_title {
+  margin-bottom: 0.5rem;
+}
+.features .product_section {
+  display: flex;
+  overflow-x: scroll;
+  border: 5px solid hsl(174, 100%, 29%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.features .product_section .product {
   width: 50%;
 }
 
