@@ -1,0 +1,27 @@
+@use '../variables/variables.scss' as *;
+
+.exclusive {
+  margin-top: 0.5rem;
+  background-color: $clr_Tertiary-600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $clr_neutral-900;
+  .exclusive_item {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    .exclusive_description {
+      color: $clr_neutral-100;
+    }
+    .exclusive_button {
+      align-self: self-end;
+      padding: 1em;
+      border: none;
+      border-radius: 0.5rem;
+      color: $clr_neutral-900;
+      font-weight: 500;
+      background-color: $clr_button_Exclusive;
+    }
+  }
+}
