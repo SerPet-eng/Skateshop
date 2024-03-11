@@ -1,0 +1,10 @@
+.sponsor {
+  margin: 1rem;
+  display: flex;
+  overflow-x: scroll;
+  .sponsor_icon {
+    width: 30%;
+    flex: 1;
+    filter: grayscale(1);
+  }
+}
