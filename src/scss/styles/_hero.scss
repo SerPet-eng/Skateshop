@@ -1,5 +1,9 @@
 @use '../variables/variables.scss' as *;
 
+.main {
+  position: relative;
+}
+
 .hero {
   position: relative;
   padding: 2rem;
@@ -28,9 +32,19 @@
     line-height: 3rem;
     font-size: 3rem;
     color: $clr_neutral-900;
+    text-shadow: 2px 2px 5px black;
   }
 
   .hero_paragraph {
     color: $clr_neutral-900;
+    text-shadow: 2px 2px 5px black;
   }
+}
+
+.hero_image {
+  position: absolute;
+  left: 5rem;
+  bottom: 2rem;
+  z-index: 2;
+  width: 50%;
 }

@@ -127,6 +127,10 @@ h6 {
   right: -100rem;
 }
 
+.main {
+  position: relative;
+}
+
 .hero {
   position: relative;
   padding: 2rem;
@@ -154,9 +158,19 @@ h6 {
   line-height: 3rem;
   font-size: 3rem;
   color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 5px black;
 }
 .hero .hero_paragraph {
   color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 5px black;
+}
+
+.hero_image {
+  position: absolute;
+  left: 5rem;
+  bottom: 2rem;
+  z-index: 2;
+  width: 50%;
 }
 
 html,

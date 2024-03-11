@@ -1,3 +1,6 @@
+import Raccoon from '../../../images/main_AxisRacoon-removebg.png';
+import Sample from '../../../images/main_AxisRacoon-removebg.png';
+
 export default function Hero() {
   return (
     <>
@@ -7,7 +10,13 @@ export default function Hero() {
           Providing you the best experience to have in skateboarding. Let's
           Roll!
         </p>
+        <img src={Sample} alt="Sample Image" />
       </section>
+      <img
+        src={Raccoon}
+        alt="A Raccoon Logo from Axis Skateshop"
+        className="hero_image"
+      />
     </>
   );
 }
