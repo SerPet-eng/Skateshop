@@ -260,6 +260,22 @@ h6 {
   outline: 5px solid hsl(22, 62%, 52%);
 }
 
+.quote {
+  margin: -0.3rem;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 1rem 1rem;
+}
+.quote .quote_photos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 html,
 body {
   font-family: "Poppins", sans-serif;
