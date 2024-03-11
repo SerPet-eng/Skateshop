@@ -3,7 +3,7 @@ import Menu from '../../images/icon_Menu.svg';
 import { useState } from 'react';
 
 export default function Header() {
-  const [isToggle, setIsToggle] = useState(true);
+  const [isToggle, setIsToggle] = useState(false);
 
   const toggleMenuButton = () => {
     setIsToggle((prevToggle) => !prevToggle);
