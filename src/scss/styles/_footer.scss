@@ -1,0 +1,30 @@
+@use '../variables/variables.scss' as *;
+
+.footer {
+  background-color: $clr_Primary-900;
+  color: $clr_neutral-900;
+  padding: 1rem;
+  .footer_first {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_middle {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer_last {
+    display: flex;
+    flex-direction: column;
+    .social {
+      margin-bottom: 0.5rem;
+      display: flex;
+      gap: 1rem;
+      .social_icon {
+        width: 10%;
+      }
+    }
+  }
+}
