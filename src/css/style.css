@@ -225,6 +225,41 @@ h6 {
   background-color: hsl(354, 100%, 29%);
 }
 
+.about {
+  padding: 1rem;
+  position: relative;
+  background: hsl(22, 62%, 52%);
+  background: linear-gradient(180deg, hsl(22, 62%, 52%) 70%, hsl(0, 0%, 0%) 70%);
+  border-radius: 1rem 1rem 0 0;
+}
+.about .about_article {
+  color: hsl(0, 0%, 100%);
+}
+.about .about_article .about_button {
+  margin-top: 0.5rem;
+  padding: 1em;
+  border: none;
+  border-radius: 0.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  background-color: hsl(354, 100%, 29%);
+}
+.about .about_media {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.about .about_media .about_icon {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+}
+.about .about_media .about_video {
+  border: 5px solid hsl(174, 100%, 29%);
+  border-radius: 1rem;
+  outline: 5px solid hsl(22, 62%, 52%);
+}
+
 html,
 body {
   font-family: "Poppins", sans-serif;

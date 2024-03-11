@@ -1,0 +1,40 @@
+@use '../variables/variables.scss' as *;
+
+.about {
+  padding: 1rem;
+  position: relative;
+  background: $clr_Secondary-900;
+  background: linear-gradient(
+    180deg,
+    $clr_Secondary-900 70%,
+    $clr_neutral-100 70%
+  );
+  border-radius: 1rem 1rem 0 0;
+  .about_article {
+    color: $clr_neutral-900;
+    .about_button {
+      margin-top: 0.5rem;
+      padding: 1em;
+      border: none;
+      border-radius: 0.5rem;
+      color: $clr_neutral-900;
+      font-weight: 500;
+      background-color: $clr_button_Exclusive;
+    }
+  }
+  .about_media {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    .about_icon {
+      width: 30%;
+      position: absolute;
+      bottom: 0;
+    }
+    .about_video {
+      border: 5px solid $clr_Primary-900;
+      border-radius: 1rem;
+      outline: 5px solid $clr_Secondary-900;
+    }
+  }
+}
