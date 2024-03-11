@@ -164,6 +164,11 @@ h6 {
   color: hsl(0, 0%, 100%);
   text-shadow: 2px 2px 5px black;
 }
+.hero .hero_video {
+  border: 5px solid hsl(174, 100%, 29%);
+  outline: 5px solid hsl(22, 62%, 52%);
+  border-radius: 1rem;
+}
 
 .hero_image {
   position: absolute;

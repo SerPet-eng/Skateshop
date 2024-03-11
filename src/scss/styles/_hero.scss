@@ -39,6 +39,12 @@
     color: $clr_neutral-900;
     text-shadow: 2px 2px 5px black;
   }
+
+  .hero_video {
+    border: 5px solid $clr_Primary-900;
+    outline: 5px solid $clr_Secondary-900;
+    border-radius: 1rem;
+  }
 }
 
 .hero_image {

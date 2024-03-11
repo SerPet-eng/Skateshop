@@ -1,5 +1,5 @@
 import Raccoon from '../../../images/main_AxisRacoon-removebg.png';
-import Sample from '../../../images/main_AxisRacoon-removebg.png';
+import Sample from '../../../images/Video Player.png';
 
 export default function Hero() {
   return (
@@ -10,7 +10,7 @@ export default function Hero() {
           Providing you the best experience to have in skateboarding. Let's
           Roll!
         </p>
-        <img src={Sample} alt="Sample Image" />
+        <img src={Sample} alt="Sample Video Player" className="hero_video" />
       </section>
       <img
         src={Raccoon}
