@@ -29,6 +29,7 @@
   }
 
   .hero_title {
+    max-width: 19rem;
     line-height: 3rem;
     font-size: 3rem;
     color: $clr_neutral-900;
@@ -49,8 +50,9 @@
 
 .hero_image {
   position: absolute;
-  top: 30rem;
-  left: 6rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   width: 50%;
 }

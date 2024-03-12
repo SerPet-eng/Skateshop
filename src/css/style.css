@@ -156,6 +156,7 @@ h6 {
   filter: blur(0.1rem);
 }
 .hero .hero_title {
+  max-width: 19rem;
   line-height: 3rem;
   font-size: 3rem;
   color: hsl(0, 0%, 100%);
@@ -173,14 +174,15 @@ h6 {
 
 .hero_image {
   position: absolute;
-  top: 30rem;
-  left: 6rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   width: 50%;
 }
 
 .features {
-  margin-top: 6rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,7 +198,7 @@ h6 {
   padding: 1rem;
 }
 .features .product_section .product {
-  width: 50%;
+  min-width: 50%;
 }
 
 .exclusive {
@@ -287,7 +289,7 @@ h6 {
   overflow-x: scroll;
 }
 .sponsor .sponsor_icon {
-  width: 30%;
+  min-width: 30%;
 }
 
 .footer {
