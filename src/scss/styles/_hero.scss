@@ -6,7 +6,7 @@
 
 .hero {
   position: relative;
-  padding: 10rem 2rem 2rem 2rem;
+  padding: calc(10rem + 3rem) 2rem 2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +37,7 @@
   }
 
   .hero_paragraph {
+    max-width: 19rem;
     color: $clr_neutral-900;
     text-shadow: 2px 2px 5px black;
   }
@@ -54,5 +55,5 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 50%;
+  max-width: 50%;
 }
