@@ -69,7 +69,8 @@ h6 {
 
 .header {
   display: flex;
-  position: relative;
+  position: fixed;
+  z-index: 99;
   font-size: 1.5rem;
   background-color: hsl(174, 100%, 29%);
 }
@@ -91,7 +92,7 @@ h6 {
   flex-direction: column;
   gap: 0.5rem;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   background-color: hsl(22, 62%, 52%);
   width: 80dvw;
   height: 100dvh;
@@ -133,7 +134,7 @@ h6 {
 
 .hero {
   position: relative;
-  padding: 2rem;
+  padding: 10rem 2rem 2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,14 +173,14 @@ h6 {
 
 .hero_image {
   position: absolute;
-  top: 25rem;
+  top: 30rem;
   left: 6rem;
   z-index: 2;
   width: 50%;
 }
 
 .features {
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;

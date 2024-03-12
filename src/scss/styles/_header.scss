@@ -2,7 +2,8 @@
 
 .header {
   display: flex;
-  position: relative;
+  position: fixed;
+  z-index: 99;
   font-size: 1.5rem;
   background-color: $clr_Primary-900;
   .logo {
@@ -23,7 +24,7 @@
     flex-direction: column;
     gap: 0.5rem;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     background-color: $clr_Secondary-900;
     width: 80dvw;
     height: 100dvh;
