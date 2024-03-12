@@ -11,9 +11,12 @@
   );
   border-radius: 1rem 1rem 0 0;
   .about_article {
+    display: flex;
+    flex-direction: column;
     color: $clr_neutral-900;
     .about_button {
       margin-top: 0.5rem;
+      align-self: self-end;
       padding: 1em;
       border: none;
       border-radius: 0.5rem;

@@ -234,10 +234,13 @@ h6 {
   border-radius: 1rem 1rem 0 0;
 }
 .about .about_article {
+  display: flex;
+  flex-direction: column;
   color: hsl(0, 0%, 100%);
 }
 .about .about_article .about_button {
   margin-top: 0.5rem;
+  align-self: self-end;
   padding: 1em;
   border: none;
   border-radius: 0.5rem;
@@ -278,14 +281,13 @@ h6 {
 }
 
 .sponsor {
-  margin: 1rem;
+  margin: 2rem auto 2rem auto;
+  padding: 1rem;
   display: flex;
   overflow-x: scroll;
 }
 .sponsor .sponsor_icon {
   width: 30%;
-  flex: 1;
-  filter: grayscale(1);
 }
 
 .footer {
