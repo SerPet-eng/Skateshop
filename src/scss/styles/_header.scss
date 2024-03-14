@@ -6,6 +6,12 @@
   z-index: 99;
   font-size: 1.5rem;
   background-color: $clr_Primary-900;
+  @media (min-width: 615px) {
+    position: static;
+    flex-direction: row;
+    font-size: 1rem;
+    z-index: 0;
+  }
   .logo {
     max-width: 30%;
     margin-right: auto;
@@ -14,12 +20,16 @@
     }
   }
   .menu_button {
+    display: block;
     border: none;
     padding: 2rem;
     background-color: transparent;
     .menu_icon {
-      width: 70%;
+      max-width: 70%;
       margin-left: auto;
+    }
+    @media (min-width: 615px) {
+      display: none;
     }
   }
   .nav {
@@ -33,8 +43,20 @@
     height: 100dvh;
     padding: 1rem;
     font-weight: 500;
+    @media (min-width: 615px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      position: static;
+      width: 100dvw;
+      height: auto;
+    }
     .nav_menu {
       padding: 0;
+      @media (min-width: 615px) {
+        display: flex;
+        gap: calc(0.5rem + 0.1rem);
+      }
       .nav_list {
         list-style: none;
         color: $clr_neutral-900;
@@ -44,6 +66,9 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      @media (min-width: 615px) {
+        flex-direction: row;
+      }
       .nav_login,
       .nav_register {
         color: $clr_neutral-900;
@@ -55,11 +80,11 @@
     }
   }
   .open {
-    top: 7rem;
+    top: 6.25rem;
     right: 0;
   }
   .close {
-    top: 7rem;
+    top: 6.25rem;
     right: -100rem;
   }
 }

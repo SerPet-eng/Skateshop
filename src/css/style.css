@@ -74,6 +74,14 @@ h6 {
   font-size: 1.5rem;
   background-color: hsl(174, 100%, 29%);
 }
+@media (min-width: 615px) {
+  .header {
+    position: static;
+    flex-direction: row;
+    font-size: 1rem;
+    z-index: 0;
+  }
+}
 .header .logo {
   max-width: 30%;
   margin-right: auto;
@@ -84,13 +92,19 @@ h6 {
   }
 }
 .header .menu_button {
+  display: block;
   border: none;
   padding: 2rem;
   background-color: transparent;
 }
 .header .menu_button .menu_icon {
-  width: 70%;
+  max-width: 70%;
   margin-left: auto;
+}
+@media (min-width: 615px) {
+  .header .menu_button {
+    display: none;
+  }
 }
 .header .nav {
   display: flex;
@@ -104,8 +118,24 @@ h6 {
   padding: 1rem;
   font-weight: 500;
 }
+@media (min-width: 615px) {
+  .header .nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: static;
+    width: 100dvw;
+    height: auto;
+  }
+}
 .header .nav .nav_menu {
   padding: 0;
+}
+@media (min-width: 615px) {
+  .header .nav .nav_menu {
+    display: flex;
+    gap: 0.6rem;
+  }
 }
 .header .nav .nav_menu .nav_list {
   list-style: none;
@@ -116,6 +146,11 @@ h6 {
   flex-direction: column;
   gap: 0.5rem;
 }
+@media (min-width: 615px) {
+  .header .nav .nav_buttons {
+    flex-direction: row;
+  }
+}
 .header .nav .nav_buttons .nav_login,
 .header .nav .nav_buttons .nav_register {
   color: hsl(0, 0%, 100%);
@@ -125,11 +160,11 @@ h6 {
   padding: 0.5rem;
 }
 .header .open {
-  top: 7rem;
+  top: 6.25rem;
   right: 0;
 }
 .header .close {
-  top: 7rem;
+  top: 6.25rem;
   right: -100rem;
 }
 
