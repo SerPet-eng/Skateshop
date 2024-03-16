@@ -2,7 +2,7 @@
 
 .quote {
   margin: -0.3rem;
-  padding: 2rem;
+  padding: 20rem 2rem;
   background-color: $clr_neutral-100;
   color: $clr_neutral-900;
   display: flex;
@@ -12,6 +12,21 @@
   .quote_photos {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 0.75rem;
+    @media (min-width: 900px) {
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+    .skate_photo {
+      @media (min-width: 900px) {
+        width: calc(100% / 4);
+      }
+    }
+  }
+  .quote_article {
+    margin: 1rem;
+    text-align: center;
   }
 }

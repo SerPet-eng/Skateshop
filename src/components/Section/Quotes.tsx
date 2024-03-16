@@ -7,12 +7,21 @@ export default function Quotes() {
     <>
       <section className="quote">
         <div className="quote_photos">
-          <img src={ImageOne} alt="Skate Scenery The Streets" />
+          <img
+            src={ImageOne}
+            alt="Skate Scenery The Streets"
+            className="skate_photo"
+          />
           <img
             src={ImageTwo}
             alt="Skate Scenery Where Skater are doing Ollie"
+            className="skate_photo"
           />
-          <img src={ImageThree} alt="Skate Scenery of A Bunch of Skater" />
+          <img
+            src={ImageThree}
+            alt="Skate Scenery of A Bunch of Skater"
+            className="skate_photo"
+          />
         </div>
         <article className="quote_article">
           <h2 className="quote_title">Don&apos;t Worry Keep Pushing</h2>
