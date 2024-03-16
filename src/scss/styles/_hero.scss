@@ -69,8 +69,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  max-width: 50%;
+  max-width: 35%;
   @media (min-width: 535px) {
+    top: 28%;
     max-width: 30%;
   }
   @media (min-width: 615px) {

@@ -10,7 +10,9 @@ export default function About() {
           <p className="about_description">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             itaque ratione dolorem molestias accusamus repellat tenetur atque
-            dolore qui nostrum?
+            dolore qui nostrum? Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Qui magnam expedita accusamus iusto amet
+            voluptatum eum provident modi suscipit culpa!
           </p>
           <button className="about_button">Click Here</button>
         </article>
