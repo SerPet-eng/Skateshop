@@ -3,6 +3,7 @@
 .header {
   display: flex;
   position: fixed;
+  min-width: 100dvw;
   z-index: 99;
   font-size: 1.5rem;
   background-color: $clr_Primary-900;
@@ -13,11 +14,11 @@
     z-index: 0;
   }
   .logo {
-    max-width: 30%;
+    min-width: 10%;
     margin-right: auto;
-    @media (min-width: 535px) {
-      max-width: 20%;
-    }
+    // @media (min-width: 535px) {
+    //   max-width: 20%;
+    // }
   }
   .menu_button {
     display: block;
@@ -36,6 +37,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
     position: absolute;
     z-index: 10;
     background-color: $clr_Secondary-900;
@@ -80,11 +82,11 @@
     }
   }
   .open {
-    top: 6.25rem;
+    top: 10rem;
     right: 0;
   }
   .close {
-    top: 6.25rem;
+    top: 10rem;
     right: -100rem;
   }
 }

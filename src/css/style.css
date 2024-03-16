@@ -70,6 +70,7 @@ h6 {
 .header {
   display: flex;
   position: fixed;
+  min-width: 100dvw;
   z-index: 99;
   font-size: 1.5rem;
   background-color: hsl(174, 100%, 29%);
@@ -83,13 +84,8 @@ h6 {
   }
 }
 .header .logo {
-  max-width: 30%;
+  min-width: 10%;
   margin-right: auto;
-}
-@media (min-width: 535px) {
-  .header .logo {
-    max-width: 20%;
-  }
 }
 .header .menu_button {
   display: block;
@@ -110,6 +106,7 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  border-radius: 1rem 0 0 1rem;
   position: absolute;
   z-index: 10;
   background-color: hsl(22, 62%, 52%);
@@ -160,11 +157,11 @@ h6 {
   padding: 0.5rem;
 }
 .header .open {
-  top: 6.25rem;
+  top: 10rem;
   right: 0;
 }
 .header .close {
-  top: 6.25rem;
+  top: 10rem;
   right: -100rem;
 }
 

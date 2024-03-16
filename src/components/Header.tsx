@@ -1,4 +1,4 @@
-import Logo from '../../images/main_AxisRacoon-removebg.png';
+import Logo from '../../images/favicon_io/android-chrome-192x192.png';
 import Menu from '../../images/icon_Menu.svg';
 import { useState } from 'react';
 
