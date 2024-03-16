@@ -21,7 +21,7 @@
       flex-direction: column;
       gap: 1rem;
       .exclusive_paragraph {
-        color: $clr_neutral-100;
+        color: $clr_neutral-900;
       }
       .exclusive_button {
         align-self: flex-end;
@@ -29,8 +29,8 @@
         border: none;
         border-radius: 0.5rem;
         color: $clr_neutral-900;
-        font-weight: 500;
-        background-color: $clr_button_Exclusive;
+        font-weight: 600;
+        background-color: $clr_Secondary-900;
       }
     }
   }
