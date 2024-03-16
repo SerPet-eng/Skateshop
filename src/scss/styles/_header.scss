@@ -46,6 +46,7 @@
     padding: 1rem;
     font-weight: 500;
     @media (min-width: 615px) {
+      background-color: transparent;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
@@ -54,13 +55,18 @@
       height: auto;
     }
     .nav_menu {
+      display: flex;
+      flex-direction: column;
       padding: 0;
       @media (min-width: 615px) {
-        display: flex;
-        gap: calc(0.5rem + 0.1rem);
+        flex-direction: row;
+        margin-right: auto;
       }
       .nav_list {
-        list-style: none;
+        text-align: start;
+        padding: 1em;
+        background-color: transparent;
+        border: none;
         color: $clr_neutral-900;
       }
     }

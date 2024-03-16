@@ -14,6 +14,17 @@
   text-align: center;
   gap: 0.5rem;
   overflow: hidden;
+  .hero_description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  @media (min-width: 615px) {
+    padding: 3rem;
+  }
+  @media (min-width: 900px) {
+    flex-direction: row;
+  }
 
   &::before {
     content: '';
@@ -29,9 +40,9 @@
   }
 
   .hero_title {
-    max-width: 19rem;
+    min-width: 19rem;
     line-height: 3rem;
-    font-size: 3rem;
+    font-size: calc(3rem + 1dvw);
     color: $clr_neutral-900;
     text-shadow: 2px 2px 5px black;
   }
@@ -46,6 +57,9 @@
     border: 5px solid $clr_Primary-900;
     outline: 5px solid $clr_Secondary-900;
     border-radius: 1rem;
+    @media (min-width: 900px) {
+      min-width: 10rem;
+    }
   }
 }
 
@@ -58,5 +72,13 @@
   max-width: 50%;
   @media (min-width: 535px) {
     max-width: 30%;
+  }
+  @media (min-width: 615px) {
+    top: 20%;
+  }
+  @media (min-width: 900px) {
+    top: 8%;
+    left: 60%;
+    max-width: 20%;
   }
 }

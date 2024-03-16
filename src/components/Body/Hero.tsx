@@ -5,11 +5,14 @@ export default function Hero() {
   return (
     <>
       <section className="hero">
-        <h1 className="hero_title">Welcome to Axis Skateshop</h1>
-        <p className="hero_paragraph">
-          Providing you the best experience to have in skateboarding. Let's
-          Roll!
-        </p>
+        <div className="hero_description">
+          <h1 className="hero_title">Welcome to Axis Skateshop</h1>
+          <p className="hero_paragraph">
+            Providing you the best experience to have in skateboarding. Let's
+            Roll!
+          </p>
+        </div>
+
         <img src={Sample} alt="Sample Video Player" className="hero_video" />
       </section>
       <img
